@@ -1,0 +1,6 @@
+- name: Ensure firewall is enabled and configured
+  ufw:
+    state: enabled
+    rule: allow
+    port: 443
+    proto: tcp

@@ -1,0 +1,9 @@
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: latest
+
+- name: Copy index.html
+  copy:
+    src: files/index.html
+    dest: /var/www/html/index.html
